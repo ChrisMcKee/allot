@@ -55,7 +55,7 @@ func (m Match) Match(position int) (string, error) {
 		return "", errors.New("Unable to parse request")
 	}
 
-	if position >= len(matches[0]) {
+	if position+1 >= len(matches[0]) {
 		return "", fmt.Errorf("No parameter at position %d", position)
 	}
 
