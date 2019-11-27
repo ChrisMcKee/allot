@@ -32,6 +32,8 @@ func TestMatches(t *testing.T) {
 		{"command <lorem>", "example command", false},
 		{"command <lorem:integer>", "command example", false},
 		{"command <lorem:integer>", "command 1234567", true},
+		{"command <lorem:string> <ipsum:string?>", "command 1234567", true},
+		{"command <lorem:string> <ipsum:string?>", "command 1234567 test", true},
 		{"command <lorem>", "command command command", false},
 	}
 
@@ -57,6 +59,7 @@ func TestPosition(t *testing.T) {
 		{"command <lorem:integer> <ipsum> <dolor:integer> <sit> <amet>", NewParameterWithType("lorem", "integer"), 0},
 		{"command <lorem:integer> <ipsum> <lorem:string> <sit> <amet>", NewParameterWithType("lorem", "integer"), 0},
 		{"command <lorem:integer> <ipsum> <lorem:string> <sit> <amet>", NewParameterWithType("lorem", "string"), 2},
+		{"command <lorem:integer> <lorem:string?>", NewParameterWithType("lorem", "string?"), 1},
 	}
 
 	var cmd Command

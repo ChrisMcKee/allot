@@ -6,8 +6,9 @@ import (
 )
 
 var regexpMapping = map[string]string{
-	"string":  "[^\\s]+",
-	"integer": "[0-9]+",
+	"string":  "([^\\s]+)",
+	"string?":  "([^\\s]+)?",
+	"integer": "([0-9]+)",
 }
 
 // Expression returns the regexp for a data type

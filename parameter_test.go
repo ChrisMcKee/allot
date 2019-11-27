@@ -10,8 +10,8 @@ func TestExpression(t *testing.T) {
 		data       string
 		expression string
 	}{
-		{"string", "[^\\s]+"},
-		{"integer", "[0-9]+"},
+		{"string", "([^\\s]+)"},
+		{"integer", "([0-9]+)"},
 		{"unknown", ""},
 	}
 
@@ -40,8 +40,8 @@ func TestParameterExpression(t *testing.T) {
 		data       string
 		expression string
 	}{
-		{"lorem", "string", "[^\\s]+"},
-		{"ipsum", "integer", "[0-9]+"},
+		{"lorem", "string", "([^\\s]+)"},
+		{"ipsum", "integer", "([0-9]+)"},
 	}
 
 	for _, set := range data {
