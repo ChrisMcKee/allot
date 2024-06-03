@@ -1,4 +1,7 @@
-# allot [![MIT License](https://img.shields.io/github/license/sbstjn/allot.svg?maxAge=3600)](https://github.com/sbstjn/allot/blob/master/LICENSE.md) [![GoDoc](https://godoc.org/github.com/sbstjn/allot?status.svg)](https://godoc.org/github.com/sbstjn/allot) [![Go Report Card](https://goreportcard.com/badge/github.com/sbstjn/allot)](https://goreportcard.com/report/github.com/sbstjn/allot) [![allot - Coverage Status](https://img.shields.io/coveralls/sbstjn/allot.svg)](https://coveralls.io/github/sbstjn/allot) [![Build Status](https://img.shields.io/circleci/project/sbstjn/allot.svg?maxAge=600)](https://circleci.com/gh/sbstjn/allot)
+# allot 
+[![MIT License](https://img.shields.io/github/license/chrismckee/allot.svg?maxAge=3600)](https://github.com/chrismckee/allot/blob/master/LICENSE.md) [![GoDoc](https://godoc.org/github.com/chrismckee/allot?status.svg)](https://godoc.org/github.com/chrismckee/allot) 
+[![Go Report Card](https://goreportcard.com/badge/github.com/chrismckee/allot)](https://goreportcard.com/report/github.com/chrismckee/allot)
+
 
 **allot** is a small `Golang` library to match and parse commands with pre-defined strings. For example use **allot** to define a list of commands your CLI application or Slackbot supports and check if incoming requests are matching your commands.
 
@@ -23,9 +26,7 @@ if (err != nil)
 
 ## Examples
 
-See the [hanu Slackbot](https://github.com/sbstjn/hanu) framework for a usecase for **allot**:
-
-* [Host a Golang Slack bot on Heroku](https://sbstjn.com/host-golang-slackbot-on-heroku-with-hanu.html)
+See the [hanu Slackbot](https://github.com/chrismckee/hanu) framework for an use-case for **allot**:
 
 ## Credits
  * [Go coverage script from Mathias Lafeldt](https://mlafeldt.github.io/blog/test-coverage-in-go/)
